@@ -70,18 +70,3 @@ Este arquivo, em geral, não deve ser exposto ao navegador ou em repositorios p�
    ```
 
 4. Cadastre, edite e exclua veículos conforme desejar.
-
----
-
-### Segurança
-
-- As credenciais do banco de dados estão isoladas em `/var/www/inc/dbinfo.inc`, que **não deve estar acessível via navegador**.
-- Para reforçar a segurança, recomenda-se bloquear o acesso a `/var/www/inc` via configuração do Apache.
-
----
-
-### Observações
-
-- Este projeto é voltado para **fins educacionais** e pode ser expandido com autenticação, filtros, paginação, API REST, etc.
-- Recomendado o uso de HTTPS em produção.
-- Você pode usar Bootstrap ou outro framework frontend para melhorar o visual.
