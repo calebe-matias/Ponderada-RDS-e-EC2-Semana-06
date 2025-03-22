@@ -5,6 +5,11 @@
 Este é um projeto simples em PHP que permite o gerenciamento de veículos de uma concessionária usando um banco de dados PostgreSQL. A aplicação roda em um servidor Apache (EC2 AWS) e possibilita realizar operações **CRUD completas (Create, Read, Update, Delete)** em um catálogo de veículos.
 
 ---
+### Vídeo de Demonstração
+
+Link para o vídeo de demonstração: [Clique aqui](https://youtu.be/Sdi9VTyuzTM)
+
+---
 
 ### Estrutura de Arquivos
 
@@ -12,10 +17,10 @@ Este é um projeto simples em PHP que permite o gerenciamento de veículos de um
 /var/www/
 ├── html/
 │   ├── Concessionaria.php      # Página principal da aplicação (CRUD de veículos)
-│   ├── SamplePage.php          # Exemplo didático de conexão e manipulação de dados
+│   ├── SamplePage.php          # Página de exemplo (Tutorial AWS)
 │
 └── inc/
-    └── dbinfo.inc              # Arquivo com credenciais de conexão ao banco (não acessível via web)
+    └── dbinfo.inc              # Arquivo com credenciais de conexão ao banco de dados
 ```
 
 ---
@@ -46,13 +51,13 @@ define('DB_PASSWORD', '12345678');
 define('DB_DATABASE', 'sample');
 ```
 
-Este arquivo, em geral, não deve ser exposto ao navegador ou em repositorios públicos, porém neste caso irei encerras as intâncias após a entrega da ponderada.
+Este arquivo, em geral, não deve ser exposto ao navegador ou em repositorios públicos, porém neste caso irei encerrar as intâncias após a entrega da ponderada.
 
 ---
 
 ### Tecnologias Utilizadas
 
-- PHP 8.x
+- PHP
 - PostgreSQL (Amazon RDS)
 - Apache 2 (Amazon EC2)
 - HTML + CSS (básico)
@@ -62,11 +67,11 @@ Este arquivo, em geral, não deve ser exposto ao navegador ou em repositorios p�
 ### Como usar
 
 1. Faça deploy dos arquivos no diretório `/var/www/html` da sua instância EC2.
-2. Edite o arquivo `dbinfo.inc` com os dados corretos do seu banco RDS.
+2. Edite o arquivo `dbinfo.inc` com os dados corretos do banco RDS.
 3. Acesse pelo navegador:
 
    ```
-   http://<seu-endereço-ip-ou-dns>/Concessionaria.php
+   http://<endereço-ip-ou-dns>/Concessionaria.php
    ```
 
 4. Cadastre, edite e exclua veículos conforme desejar.
